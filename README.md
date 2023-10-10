@@ -16,9 +16,6 @@ Finance dashboard fullstack (MERN) app with redux-toolkit state management, writ
 - Mongodb
 
 
-## 💻 Demo
-Click the link and check the app: [Link](https://ms-finance-dashboard.vercel.app/)
-
 ### Screenshot
 
 ![](./client/public/assets/dashboard.JPG)
@@ -26,7 +23,7 @@ Click the link and check the app: [Link](https://ms-finance-dashboard.vercel.app
 
 
 ## 💾 Installation
-git clone https://github.com/marcinsuski/finance-dashboard.git
+git clone https://github.com/robbieardison/finance-dashboard.git
 
 
 ## /server: 
