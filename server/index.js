@@ -29,11 +29,11 @@ app.use("/kpi", kpiRoutes);
 app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 
-
+console.log(process.env.MONGODB_URL)
 // MONGOOSE SETUP
 const PORT = process.env.PORT || 9000;
 mongoose
-    .connect(process.env.MONGO_URL, {
+    .connect(process.env.MONGODB_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
@@ -41,9 +41,9 @@ mongoose
         app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
         // ADD DATA ONE TIME ONLY IN DEV SERVER OR AS NEEDED
-        // await mongoose.connection.db.dropDatabase();
-        // KPI.insertMany(kpis);
-        // Product.insertMany(products);
-        // Transaction.insertMany(transactions);
+        //await mongoose.connection.db.dropDatabase();
+        //KPI.insertMany(kpis);
+        //Product.insertMany(products);
+        //Transaction.insertMany(transactions);
     })
     .catch((error) => console.log(`${error} did not connect`));
